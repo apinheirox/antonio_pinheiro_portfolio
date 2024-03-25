@@ -30,7 +30,7 @@
 }
 
 #sobre p {
-    font-size: 20px;
+    font-size: 15px;
     max-width: 500px; /* Largura máxima para o texto */
     text-align: left; /* Alinhado à esquerda */
 }
@@ -92,7 +92,7 @@
         align-items: center; /* Centraliza o texto dentro do container-dir */
     }
     #sobre p{
-        font-size: 20px;
+        font-size: 15px;
     }
     #sobre h2{
         font-size: 25px;

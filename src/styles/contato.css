@@ -138,7 +138,9 @@
     #contato{
         margin-bottom: 350px;
     }
-
+    .form{
+        width: 350px;
+    }
     #contato h1 {
         font-size: 30px;
         text-align: center;
