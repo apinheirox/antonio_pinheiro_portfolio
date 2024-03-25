@@ -1,0 +1,152 @@
+/* Estilos para a seção #contato */
+#contato {
+    padding: 50px 0;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px; /* Adiciona margem inferior */
+}
+
+#contato h2 {
+    font-size: 30px;
+}
+
+#contato h1 {
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+#contato .container {
+    display: flex;
+    flex-direction: column; /* Alterado para coluna em dispositivos móveis */
+    justify-content: center;
+    align-items: center;
+}
+
+.simbolo {
+    position: absolute;
+    z-index: -1;
+    margin-left: -250px;
+    margin-top: -300px;
+}
+
+#contato .container-esq {
+    flex: 1;
+    margin-left: 0; /* Alterado para 0 em dispositivos móveis */
+    margin-top: 0; /* Alterado para 0 em dispositivos móveis */
+    text-align: center; /* Centralizado em dispositivos móveis */
+}
+
+#contato .container-dir {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-left: 0; /* Alterado para 0 em dispositivos móveis */
+    margin-top: 20px; /* Ajustado para espaçamento em dispositivos móveis */
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Ajustado para largura total */
+    max-width: 450px; /* Limitado para evitar que se estenda demais */
+    gap: 10px;
+    padding: 20px; /* Ajustado para espaçamento */
+    border-radius: 15px;
+    background-color: #EBEDC7;
+    box-shadow: 0 0 0 4px #EBEDC7, 10px 10px 5px rgba(0, 0, 0, 0.267);
+    transition: .4s ease-in-out;
+}
+
+::placeholder {
+    color: #DAA06D;
+    text-align: left;
+    padding: 10px;
+}
+
+.form .heading {
+    padding-left: 0.4em;
+    color: #EF5A23;
+    font-weight: 500;
+    background-color: transparent;
+    letter-spacing: .2em;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    text-shadow: inset -1px -1px 1px #DAA06D;
+}
+
+.form .input,
+.form textarea {
+    align-self: center;
+    outline: none;
+    padding: 0.5em;
+    border: 1px solid #bec092;
+    color: #bec092;
+    width: 100%; /* Ajustado para largura total */
+    max-width: 25em; /* Limitado para evitar que se estenda demais */
+    height: 4em;
+    border-radius: 10px;
+    background-color: #fffff0;
+}
+
+.form textarea {
+    resize: vertical;
+    max-height: 100px;
+}
+
+.form .btn {
+    align-items: center;
+    align-self: center;
+    margin-top: 2em;
+    border-radius: 10px;
+    outline: none;
+    width: 200px;
+    border: none;
+    color: white;
+    background-color: #EF5A23;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    transition: .4s ease-in-out opacity,.1s ease-in-out active;
+    padding: 1em;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    transition: 0.8s ease all;
+}
+
+.form .btn:hover {
+    background-color: #da501d;
+    transition: 1.0s ease all;
+}
+
+.form .btn:active {
+    transform: translateX(0.1em) translateY(0.1em);
+    box-shadow: none;
+}
+
+/* Media queries para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    #contato .container-esq {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #contato{
+        margin-bottom: 350px;
+    }
+
+    #contato h1 {
+        font-size: 30px;
+        text-align: center;
+        width: 350px;
+    }
+
+    #contato h2 {
+        font-size: 20px;
+        width: 330px;
+    }
+}

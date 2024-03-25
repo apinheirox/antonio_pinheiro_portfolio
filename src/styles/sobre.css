@@ -1,0 +1,110 @@
+/* Estilos para a seção #sobre */
+#sobre {
+    display: flex;
+    flex-direction: row; /* Mantém o layout em linha */
+    align-items: center;
+    padding: 20px; /* Ajuste de espaçamento */
+    margin-top: -10px;
+    max-height: 700px;
+}
+.scroll-animation {
+    opacity: 0;
+    transform: translateX(-50px); /* Mova a seção para a esquerda */
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.scroll-animation.active {
+    opacity: 1;
+    transform: translateX(0); /* Retorne a seção à sua posição original */
+}
+#sobre h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#sobre h1 {
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    font-size: 20px;
+    max-width: 500px; /* Largura máxima para o texto */
+    text-align: left; /* Alinhado à esquerda */
+}
+
+#sobre .container-esq img {
+    max-width: 100%;
+    height: auto;
+    margin: 0px -70px; 
+    margin-top: 200px;/* Centraliza a imagem */
+    width: 700px; /* Largura da imagem */
+}
+
+#sobre .container-dir {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px; /* Ajuste de espaçamento */
+}
+
+#sobre .container-text {
+    margin-top: -50px;
+}
+
+.text-orange {
+    color: #EF5A23;
+}
+
+.button-sobre {
+    background-color: #EF5A23;
+    color: white;
+    margin-top: 20px;
+    transition: 0.8s ease all;
+    text-align: center;
+}
+
+.button-sobre:hover {
+    background-color: #da501d;
+    transition: 1.0s ease all;
+}
+
+/* Media queries para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    #sobre {
+        flex-direction: column; /* Altera para coluna em dispositivos móveis */
+    }
+    
+    #sobre .container-dir {
+        order: -1; /* Muda a ordem do container-dir */
+        padding-left: 0; /* Remove o padding à esquerda */
+        text-align: center;
+        margin-top: 40px; /* Centraliza o texto */
+    }
+
+    #sobre .container-dir h2,
+    #sobre .container-dir h1,
+    #sobre .container-dir p,
+    #sobre .container-dir .button-sobre {
+        text-align: center;
+        justify-content: center;
+        align-items: center; /* Centraliza o texto dentro do container-dir */
+    }
+    #sobre p{
+        font-size: 20px;
+    }
+    #sobre h2{
+        font-size: 25px;
+    }
+    #sobre h1{
+        font-size: 35px;
+    }
+    #sobre .container-esq img {
+        width: 380px;
+        max-width: 400px;
+        margin-top: 40px;
+        margin-right: 0px;
+    }
+}
+
