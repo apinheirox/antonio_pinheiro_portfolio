@@ -10,11 +10,11 @@ body {
 }
 @font-face {
     font-family: 'Two Weekends Sans';
-    src: url('Two Weekends Sans.woff') format('woff');
+    src: url('../../fonts/twoweekendssans-regular.woff') format('woff');
 }
 @font-face {
     font-family: 'Aron';
-    src: url('Aron.woff') format('woff');
+    src: url('../../fonts/Aron-ExtraBold-BF6556dd3e2d89f.woff') format('woff');
 }
 
 #body{
