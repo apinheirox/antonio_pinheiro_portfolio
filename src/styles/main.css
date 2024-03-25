@@ -9,13 +9,12 @@ body {
     overflow-x: hidden;
 }
 @font-face {
-    font-family: "Two Weekends Sans";
-    src: url('TwoWeekendsSans.woff2') format('woff2'); /* Corrigido o nome do arquivo e a extensão */
+    font-family: 'Two Weekends Sans';
+    src: url(..//../fonts/twoweekendssans-regular.otf);
 }
-
 @font-face {
-    font-family: "Aron";
-    src: url('Aron.woff2') format('woff2'); /* Corrigido o nome do arquivo e a extensão */
+    font-family: 'Aron';
+    src: url(..//../fonts/Aron-ExtraBold-BF6556dd3e2d89f.ttf);
 }
 
 #body{
