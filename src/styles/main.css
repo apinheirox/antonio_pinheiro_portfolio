@@ -36,11 +36,11 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .text-secundario {
-    font-family: 'Aron';
+    font-family: 'Aron', sans-serif;
 }
 
 .text-principal {
-    font-family: 'Two Weekends Sans';
+    font-family: 'Two Weekends Sans', sans-serif;
 }
 
 .text-laranja {
