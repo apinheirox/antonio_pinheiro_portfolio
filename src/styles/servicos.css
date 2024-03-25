@@ -98,12 +98,11 @@
 
 
 @media only screen and (max-width: 768px) {
-    #sobre,
-    #servicos {
+    #sobre {
         margin-top: 300px;
     }
     #servicos{
-        margin-top: 100px;
+        margin-top: 300px;
     }
     #servicos p{
         font-size: 15px;
