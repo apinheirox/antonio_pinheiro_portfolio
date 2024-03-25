@@ -96,13 +96,17 @@
     text-align: center;
 }
 
-
+@media only screen and (max-width: 400px){
+    #servicos{
+        margin-top: 500px;
+    }
+}
 @media only screen and (max-width: 768px) {
     #sobre {
         margin-top: 300px;
     }
     #servicos{
-        margin-top: 500px;
+        margin-top: 300px;
     }
     #servicos p{
         font-size: 15px;
