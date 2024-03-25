@@ -8,6 +8,16 @@ body {
     background-color: #FFFFF0;
     overflow-x: hidden;
 }
+@font-face {
+    font-family: "Two Weekends Sans";
+    src: url('TwoWeekendsSans.woff2') format('woff2'); /* Corrigido o nome do arquivo e a extensão */
+}
+
+@font-face {
+    font-family: "Aron";
+    src: url('Aron.woff2') format('woff2'); /* Corrigido o nome do arquivo e a extensão */
+}
+
 #body{
     display: flex;
     justify-content: center;
