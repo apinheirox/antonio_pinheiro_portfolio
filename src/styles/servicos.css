@@ -115,10 +115,10 @@
         font-size: 25px;
     }
     #servicos h1{
-        font-size: 35px;
+        font-size: 30px;
     }
     .linguagens-1 img {
-        width: calc(37.99% - 65px);
+        width: calc(37.99% - 55px);
         margin: -5px;
     }
 }

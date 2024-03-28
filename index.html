@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./src/styles/portfolio.css">
     <link rel="stylesheet" href="./src/styles/contato.css">
     <link rel="stylesheet" href="./src/styles/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./images/KOMU - ICONE WDT FUNDO VERDE 2.png" type="image/x-icon">
 </head>
 <body>
@@ -35,7 +36,7 @@
     <!--SECTION HOME-->
     <section id="home">
         <div class="container">
-            <div class="container-esq">
+            <div class="container-esq" data-aos="fade-right">
                 <h3 class="text-secundario text-home">Olá!</h3>
                 <h2 class="text-secundario text-home">Me chamo <span class="text-orange">Antônio Pinheiro</span> </h2>
                 <h1 class="text-principal text-home-principal">Desenvolvedor Front-end</h1>
@@ -43,17 +44,19 @@
                 <a href="https://www.instagram.com/acpinheirox/" target="_blank"><ion-icon class="icon icon-2" name="logo-instagram"></ion-icon></a>
                 <a href="https://github.com/apinheirox" target="_blank"><ion-icon class="icon icon-3" name="logo-github"></ion-icon></a>
             </div>
-            <div class="container-dir">
+            <div class="container-dir" data-aos="fade-left">
                 <img src="./images/ft-home.png" alt="">
         </div>
+        
     </div>
+    
     </section>
     <!--SECTION SOBRE-->
-    <section id="sobre" class="scroll-animation">
-        <div class="container-esq">
+    <section id="sobre">
+        <div class="container-esq" data-aos="fade-up-right">
             <img src="./images/Group 5teste-1.png" alt="">
         </div>
-        <div class="container-dir container-text">
+        <div class="container-dir container-text" data-aos="fade-up-left">
             <h2 class="text-secundario"><span class=" text-orange">SOBRE</span> MIM</h2>
             <h1 class="text-principal">Quem sou eu</h1>
             <p class="text-secundario">Olá! Sou Antônio Pinheiro, um entusiasta da tecnologia apaixonado por criar experiências incríveis na web. Desde que me interessei pelo front-end, tenho trabalhado incansavelmente para aprimorar minhas habilidades e mergulhar fundo no vasto mundo do desenvolvimento web.
@@ -63,11 +66,13 @@
         </div>
     </section>
     <!--SECTION SERVIÇOS-->
-    <section id="servicos"  class="scroll-animation2">
+    <section id="servicos">
+        <div data-aos="flip-up">
         <h2 class="text-secundario text-orange text-serv">SERVIÇOS</h2>
         <h1 class="text-principal">O Que Eu Faço</h1>
         <p class="text-secundario">Minha principal responsabilidade é criar a interface de usuário de um site ou aplicativo, garantindo que seja visualmente atraente, responsivo e fácil de usar em uma variedade de dispositivos e navegadores.</p>
-        <div class="linguagens-1">
+    </div>
+        <div class="linguagens-1" >
             <img src="./images/woodev-linguagens/1.png" alt="" width="80px">
             <img src="./images/woodev-linguagens/2.png" alt="" width="80px" >
             <img src="./images/woodev-linguagens/3.png" alt="" width="80px">
@@ -78,7 +83,7 @@
             <img src="./images/woodev-linguagens/8.png" alt="" width="80px">
             <img src="./images/woodev-linguagens/9.png" alt="" width="80px">
         </div>
-        <div class="servicos-img">
+        <div class="servicos-img" data-aos="flip-left">
             <div class="backg">
                 <img src="./images/serviços1.png" alt="" width="100px" class="img-serv">
                 <h2 class="text-principal text-serv">Websites</h2>
@@ -98,13 +103,13 @@
         </div>
     </section>
 
-    <section id="portfolio" class="scroll-animation">
+    <section id="portfolio">
         <div>
-        <div class="container-esq port-esq">
+        <div class="container-esq port-esq" data-aos="fade-up-right">
             <h2 class="text-secundario text-orange">PORTFÓLIO</h2>
             <h1 class="text-principal">Projetos Recentes</h1>
         </div>
-        <div class="servicos-img">
+        <div class="servicos-img" data-aos="flip-left">
             <div class="backg port">
                 <a href="#" target="_blank"><img src="./images/Portfolio-1.png" alt=""></a>
             </div>
@@ -118,13 +123,13 @@
 </div>
     </section>
 
-    <section id="contato" class="scroll-animation2">
+    <section id="contato">
         <div class="container">
-            <div class="container-esq">
+            <div class="container-esq" data-aos="zoom-in-up">
                 <h2 class="text-secundario text-orange">CONTATO</h2>
                 <h1 class="text-principal">Entre em contato</h1>
             </div>
-            <div class="container-dir">
+            <div class="container-dir" data-aos="zoom-in">
                 <form class="form" action="https://formsubmit.co/matoscezar17@gmail.com" method="POST">
                     <p class="text-secundario heading">FALE COMIGO</p>
                     <input placeholder="Nome" class="input" id="nome" type="text" required>
@@ -137,13 +142,12 @@
                 </form>
             </div>
         </div>
-        <div class="simbolo">
+        <div class="simbolo" data-aos="fade-up-right">
             <img src="./images/Simbolo.png" alt="" width="600px">
             </div>
     </section>
     <footer id="footer">
         <div class="esq">
-            <img src="./images/KOMU - LOGO WDT PRETA PNG.png" alt="" width="200px">
             <h3 class="text-secundario">matoscezar17@gmail.com</h3>
             <h3 class="text-secundario">(71) 9 8465-2983</h3>
         </div>
@@ -156,6 +160,7 @@
     <div class="bottom-text">
         <p class="text-secundario">Desenvolvido por Woodev</p>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="./src/main.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

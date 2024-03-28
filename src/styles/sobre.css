@@ -98,13 +98,14 @@
         font-size: 25px;
     }
     #sobre h1{
-        font-size: 35px;
+        font-size: 30px;
     }
     #sobre .container-esq img {
         width: 380px;
         max-width: 400px;
         margin-top: 40px;
         margin-right: 0px;
+        margin-bottom: 100px;
     }
 }
 
