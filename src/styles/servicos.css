@@ -5,7 +5,6 @@
     flex-direction: column;
     padding: 20px;
     margin-bottom: 20px;
-    margin-top: 50px;
 }
 .scroll-animation2 {
     opacity: 0;
@@ -107,7 +106,7 @@
         margin-top: 300px;
     }
     #servicos{
-        margin-top: 300px;
+        margin-top: 400px;
     }
     #servicos p{
         font-size: 15px;
