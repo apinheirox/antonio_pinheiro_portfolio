@@ -130,15 +130,15 @@
                 <h1 class="text-principal">Entre em contato</h1>
             </div>
             <div class="container-dir" data-aos="zoom-in">
-                <form class="form" action="https://formsubmit.co/matoscezar17@gmail.com" method="POST">
+                <form class="form">
                     <p class="text-secundario heading">FALE COMIGO</p>
                     <input placeholder="Nome" class="input" id="nome" type="text" required>
-                    <input placeholder="Telefone" class="input" type="tel" required>
-                    <input placeholder="E-mail" class="input" type="email"  required>
+                    <input placeholder="Telefone" class="input" type="tel" id="telefone" required>
+                    <input placeholder="E-mail" class="input" type="email" id="email" required>
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/obrigado.html">
                     <textarea placeholder="Mensagem" class="input" id="mensagem" name="mensagem" rows="4" required></textarea>
-                    <button class="btn">Enviar</button>
+                    <button class="btn" id="emailButton">Enviar</button>
                 </form>
             </div>
         </div>
@@ -160,6 +160,7 @@
     <div class="bottom-text">
         <p class="text-secundario">Desenvolvido por Woodev</p>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="./src/main.js"></script>
