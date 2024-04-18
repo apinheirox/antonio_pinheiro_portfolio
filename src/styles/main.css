@@ -16,7 +16,16 @@ body {
     font-family: 'Aron';
     src: url('../../fonts/Aron-ExtraBold-BF6556dd3e2d89f.woff') format('woff');
 }
-
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #EF5A23;
+    border-radius: 10px;
+}
 #body{
     display: flex;
     justify-content: center;
@@ -144,22 +153,23 @@ button:hover {
 }
 
 .container-dir img {
-    max-width: 100%;
+    max-width: 500px;
+    width: 500px;
     height: auto;
-    margin: 0; /* Removido a margem superior */
+    margin: 0 auto; /* Removido a margem superior */
     z-index: -1; 
 }
 
 .text-home-principal {
     margin-bottom: 10px;
-    font-size: 60px; /* Mantém o tamanho da fonte */
+    font-size: 55px; /* Mantém o tamanho da fonte */
     font-weight: 100;
     text-align: left; /* Alinha à esquerda por padrão */
 }
 
 .text-home {
     margin-bottom: 10px;
-    font-size: 30px; /* Mantém o tamanho da fonte */
+    font-size: 25px; /* Mantém o tamanho da fonte */
     font-weight: 400;
     text-align: left; /* Alinha à esquerda por padrão */
 }
@@ -170,7 +180,7 @@ button:hover {
 
 .icon {
     margin: 0px 15px 0px 0px;
-    font-size: 35px;
+    font-size: 30px;
     color: #EF5A23;
     transition: 0.9s all;
 }

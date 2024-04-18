@@ -1,35 +1,53 @@
 #portfolio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 100px;
+    align-items: center;
+    justify-content: center;
 }
-.port-esq {
-    margin-bottom: 20px;
-    flex-direction: column;
-    display: flex;
-    justify-content: left;
-}
-
-.port {
-    display: flex;
-}
-.celular{
-    width: 100px;
-}
-.port img {
-    width: 100%;
+.portfolio, .portfolio2 {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1050px;
 }
 
-#portfolio h1 {
-    font-size: 60px;
+.container-esq-port {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.container-dir-port h2, .container-esq-port h2{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.container-dir-port h1, .container-esq-port h1{
+    font-size: 55px;
+    margin-bottom: 10px;
     font-weight: 100;
-    margin: 0;
+}
+.container-dir-port p, .container-esq-port p{
+    margin-bottom: 10px;
+}
+.container-dir-port {
+    flex: 1;
 }
 
-#portfolio h2 {
-    font-size: 30px;
+.container-esq-port img, .container-dir-port img{
+    max-width: 500px;
+}
+.port-esq{
+    max-width: 1070px;
+    margin: 0 auto;
+    text-align: left;
+}
+.port-esq h1 {
+    font-size: 55px;
+    font-weight: 100;
+    margin: 0 auto;
+}
+
+.port-esq h2 {
+    font-size: 25px;
     margin: 0;
 }
 @media only screen and (max-width: 768px){
@@ -38,13 +56,35 @@
         justify-content: center;
         align-items: center;
     }
-    #portfolio h1 {
+    .portfolio{
+        flex-direction: column;
+        text-align: center;
+    }
+    .portfolio2{
+        flex-direction: column-reverse;
+    }
+    .container-esq-port img, .container-dir-port img{
+        width: 400px;
+    }
+    .container-dir-port h1, .container-esq-port h1{
+        font-size: 30px;
+    }
+    .container-dir-port h2, .container-esq-port h2{
+        font-size: 15px;
+    }
+    .container-dir-port p, .container-esq-port p{
+        font-size: 15px;
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .port-esq h1 {
         font-size: 30px;
         font-weight: 100;
         text-align: center;
         width: 318px;
     }
-    #portfolio h2{
+    .port-esq h2{
         font-size: 25px;
         text-align: center;
     }
