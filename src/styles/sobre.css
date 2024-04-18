@@ -18,19 +18,19 @@
     transform: translateX(0); /* Retorne a seção à sua posição original */
 }
 #sobre h2 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
 #sobre h1 {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 100;
     margin-bottom: 20px;
 }
 
 #sobre p {
-    font-size: 15px;
+    font-size: 14px;
     max-width: 500px; /* Largura máxima para o texto */
     text-align: left;
     margin-bottom: 5px; /* Alinhado à esquerda */

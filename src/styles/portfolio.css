@@ -21,12 +21,13 @@
     margin-bottom: 10px;
 }
 .container-dir-port h1, .container-esq-port h1{
-    font-size: 55px;
+    font-size: 50px;
     margin-bottom: 10px;
     font-weight: 100;
 }
 .container-dir-port p, .container-esq-port p{
     margin-bottom: 10px;
+    font-size: 14px;
 }
 .container-dir-port {
     flex: 1;
@@ -41,13 +42,13 @@
     text-align: left;
 }
 .port-esq h1 {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 100;
     margin: 0 auto;
 }
 
 .port-esq h2 {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
 @media only screen and (max-width: 768px){
