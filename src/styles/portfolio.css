@@ -62,6 +62,7 @@
     }
     .portfolio2{
         flex-direction: column-reverse;
+        text-align: center;
     }
     .container-esq-port img, .container-dir-port img{
         width: 400px;
