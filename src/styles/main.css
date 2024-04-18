@@ -201,7 +201,7 @@ button:hover {
     .menu-toggle {
         display: block; /* Mostra o menu hamburguer em telas menores */
         cursor: pointer; /* Altera o cursor para indicar que é clicável */
-        margin-right: -80px; /* Adiciona um espaçamento à direita */
+        margin-right: -100px; /* Adiciona um espaçamento à direita */
     }
 
     .menu-toggle .bar {
