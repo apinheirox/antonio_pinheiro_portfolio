@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .portfolio, .portfolio2 {
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -60,12 +60,17 @@
         flex-direction: column;
         text-align: center;
     }
+    .portfolio2 .container-esq-port{
+        margin: 0 auto;
+    }
     .portfolio2{
         flex-direction: column-reverse;
         text-align: center;
+        margin: 0 auto;
     }
     .container-esq-port img, .container-dir-port img{
         width: 400px;
+        margin: 0 auto;
     }
     .container-dir-port h1, .container-esq-port h1{
         font-size: 30px;
