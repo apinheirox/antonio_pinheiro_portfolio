@@ -2,7 +2,7 @@
 #footer {
     background-color: #EBEDC7;
     color: #1A1A1A;
-    padding: 30px 20px; /* Ajustado para tornar o padding responsivo */
+    padding: 30px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,19 +28,19 @@
     flex: 1;
     text-align: center;
     flex-direction: column;
-    margin-top: 20px; /* Ajustado para espaçamento */
+    margin-top: 20px;
 }
 
 #footer .dir {
     flex: 1;
     text-align: right;
-    margin-top: -50px; /* Ajustado para espaçamento */
+    margin-top: -50px;
 }
 
 #footer img {
     display: block;
     margin-bottom: -50px;
-    width: 150px; /* Ajuste de tamanho da imagem */
+    width: 150px;
 }
 
 #footer h3 {
@@ -67,18 +67,18 @@
     font-size: 15px;
 }
 
-/* Media queries para dispositivos móveis */
+
 @media only screen and (max-width: 768px) {
     #footer {
-        flex-direction: column; /* Altera para coluna em dispositivos móveis */
-        padding: 20px; /* Ajusta o padding */
+        flex-direction: column;
+        padding: 20px;
         text-align: center;
         align-items: center;
-        justify-content: center; /* Centraliza o conteúdo */
+        justify-content: center;
     }
     #footer .esq, #footer .mei, #footer .dir {
-        margin-top: 0; /* Remove o espaçamento no topo */
-        margin-bottom: 10px; /* Adiciona espaçamento inferior */
+        margin-top: 0;
+        margin-bottom: 10px;
     }
     .bottom-text{
         margin-top: 10px;
