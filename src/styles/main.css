@@ -1,15 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body, html{
-    overflow-x: hidden;
-}
-body {
-    background-color: #fffff8;
-    overflow-y: hidden;
-}
 @font-face {
     font-family: 'Two Weekends Sans';
     src: url('../../fonts/twoweekendssans-regular.woff') format('woff');
@@ -17,6 +5,18 @@ body {
 @font-face {
     font-family: 'Aron';
     src: url('../../fonts/Aron-ExtraBold-BF6556dd3e2d89f.woff') format('woff');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body, html{
+    overflow-x: hidden;
+}
+body {
+    background-color: #ffffff;
+}
 }
 body::-webkit-scrollbar {
     width: 10px;
@@ -75,7 +75,7 @@ header {
     width: 100%;
 }
 header.header-scrolled {
-    background-color: #fffff0; /* Define a cor de fundo quando o header estiver rolado */
+    background-color: #ffffff; /* Define a cor de fundo quando o header estiver rolado */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.192);
     border-radius: 10px; /* Adiciona uma sombra sutil */
 }
@@ -234,7 +234,7 @@ button:hover {
     nav ul.active {
         display: flex;
         flex-direction: column; /* Alinha os itens verticalmente */
-        background-color: #fffff0; /* Define o fundo da lista */
+        background-color: #ffffff; /* Define o fundo da lista */
         position: absolute; /* Posiciona a lista sobre o conteúdo */
         top: 100px; /* Distância do topo */
         left: 0; /* Alinha à esquerda */
