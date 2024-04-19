@@ -57,8 +57,8 @@
     width: 270px;
     height: 270px;
     border-radius: 30px;
-    background-color: #ffffff;
-    border: 2px solid #ececec;
+    background-color: #ebedc7;
+    border: 2px solid #d9dbb6;
     margin: 30px;
     flex-direction: column;
     padding: 10px;
@@ -122,6 +122,7 @@
         margin: -5px;
     }
     .backg{
-        width: 270px;
+        width: 300px;
+        height: 300px;
     }
 }
