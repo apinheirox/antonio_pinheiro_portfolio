@@ -7,7 +7,7 @@ body, html{
     overflow-x: hidden;
 }
 body {
-    background-color: #fffff8;
+    background-color: #ffffff;
     overflow-y: hidden;
 }
 @font-face {
@@ -76,8 +76,7 @@ header {
 }
 header.header-scrolled {
     background-color: #ffffff; /* Define a cor de fundo quando o header estiver rolado */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.192);
-    border-radius: 10px; /* Adiciona uma sombra sutil */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.192); 
 }
 #home{
     margin-top: 100px;
