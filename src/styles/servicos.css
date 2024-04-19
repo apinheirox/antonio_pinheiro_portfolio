@@ -54,16 +54,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 270px;
     height: 270px;
     border-radius: 30px;
-    background-color: #EBEDC7;
-    border: 2px solid;
-    border-color: #d3d4b2;
+    background-color: #ffffff;
+    border: 2px solid #ececec;
     margin: 30px;
     flex-direction: column;
     padding: 10px;
-    box-shadow: 0px 10px 30px rgba(7, 7, 7, 0.055);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
 }
 
@@ -107,7 +106,7 @@
         margin-top: 300px;
     }
     #servicos{
-        margin-top: 400px;
+        margin-top: 50px;
     }
     #servicos p{
         font-size: 13px;
@@ -119,7 +118,10 @@
         font-size: 30px;
     }
     .linguagens-1 img {
-        width: calc(37.99% - 55px);
+        width: calc(37.99% - 65px);
         margin: -5px;
+    }
+    .backg{
+        width: 270px;
     }
 }
