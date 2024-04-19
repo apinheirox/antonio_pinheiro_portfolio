@@ -2,17 +2,16 @@
 #footer {
     background-color: #EBEDC7;
     color: #1A1A1A;
-    padding: 30px 20px;
+    padding: 50px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 220px;
+    height: 250px;
     flex-wrap: wrap;
-    margin-top: 55px;
-    padding: 0px 50px;
+    margin-top: 100px;
 }
 
 .mei, .esq h3 {
@@ -75,6 +74,7 @@
         text-align: center;
         align-items: center;
         justify-content: center;
+        height: 200px;
     }
     #footer .esq, #footer .mei, #footer .dir {
         margin-top: 0;
