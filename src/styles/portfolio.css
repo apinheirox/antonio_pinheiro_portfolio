@@ -37,6 +37,7 @@
 
 .container-esq-port img, .container-dir-port img{
     max-width: 500px;
+    max-height: 500px;
 }
 .port-esq{
     max-width: 1070px;
