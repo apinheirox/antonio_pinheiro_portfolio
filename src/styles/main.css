@@ -76,7 +76,7 @@ header {
 }
 header.header-scrolled {
     background-color: #ffffff; /* Define a cor de fundo quando o header estiver rolado */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.192); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.192);
 }
 #home{
     margin-top: 100px;
