@@ -138,8 +138,8 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 30px;
-    margin: 0px 50px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .container-esq {

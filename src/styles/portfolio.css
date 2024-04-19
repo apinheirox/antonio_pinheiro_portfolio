@@ -2,6 +2,8 @@
     margin-top: 100px;
     align-items: center;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .portfolio, .portfolio2 {
     display: flex;
@@ -56,6 +58,8 @@
         text-align: center;
         justify-content: center;
         align-items: center;
+        width: 350px;
+        margin: 0 auto;
     }
     .portfolio{
         flex-direction: column;
@@ -70,8 +74,8 @@
         text-align: left;
         margin: 0 auto;
     }
-    .container-esq-port img, .container-dir-port img{
-        width: 400px;
+    #portfolio img{
+        max-width: 350px;
         margin: 0 auto;
     }
     .container-dir-port h1, .container-esq-port h1{

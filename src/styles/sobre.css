@@ -4,8 +4,9 @@
     flex-direction: row; /* Mantém o layout em linha */
     align-items: center;
     padding: 20px; /* Ajuste de espaçamento */
-    margin-top: -10px;
+    margin: 0 auto;
     max-height: 700px;
+    max-width: 1200px;
 }
 .scroll-animation {
     opacity: 0;

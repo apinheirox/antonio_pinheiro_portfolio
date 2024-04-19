@@ -1,3 +1,8 @@
+#skills{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .skills-section {
     padding: 40px;
     border-radius: 8px;
@@ -64,8 +69,8 @@
 }
 
 @media only screen and (max-width: 768px){
-    .skills-section{
-        margin-top: 410px;
+    #skills{
+        margin-top: 350px;
     }
     .skills-section h1{
         font-size: 30px;
