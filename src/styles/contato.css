@@ -148,7 +148,9 @@
         text-align: center;
         width: 350px;
     }
-
+    .simbolo{
+        margin-top: 100px;
+    }
     #contato h2 {
         font-size: 25px;
         width: 330px;
