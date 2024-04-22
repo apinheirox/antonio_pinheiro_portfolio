@@ -77,21 +77,16 @@
         text-align: center;
         align-items: center;
         justify-content: center;
-        height: 200px;
+        max-height: 350px;
     }
-    #footer .esq, #footer .mei, #footer .dir {
-        margin-top: 0;
-        margin-bottom: 10px;
+    .container-footer{
+        width: 300px;
+        align-items: center;
+        margin: 0 auto;
     }
-    .bottom-text{
-        margin-top: 10px;
-    }
-    #footer img {
-        margin-top: -50px;
-        margin-left: 20px;
-    }
-    .container-footer .dir{
-        display: none;
+    #footer .dir{
+        text-align: center;
+        margin: 20px auto;
     }
 }
 
