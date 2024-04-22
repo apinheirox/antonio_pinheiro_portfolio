@@ -200,13 +200,13 @@
                 <h1 class="text-principal">Entre em contato</h1>
             </div>
             <div class="container-dir" data-aos="zoom-in">
-                <form class="form" id="contactForm" method="POST" action="enviar.php">
+                <form class="form" id="contactForm" method="POST">
                     <p class="text-secundario heading">FALE COMIGO</p>
                     <input placeholder="Nome" class="input" name="nome" id="nome" type="text" required>
                     <input placeholder="Telefone" class="input" name="telefone" type="tel" id="telefone" required>
                     <input placeholder="E-mail" class="input" name="email" type="email" id="email" required>
-                    <textarea placeholder="Sua mensagem" class="input" id="mensagem" name="mensagem" rows="4" required></textarea>
-                    <button class="btn" type="submit">Enviar Mensagem</button>
+                    <textarea placeholder="Mensagem" class="input" id="mensagem" name="mensagem" rows="4" required></textarea>
+                    <button class="btn" id="emailButton" type="button" onclick="enviarParaWhatsApp()">Enviar</button>
                 </form>
             </div>
         </div>

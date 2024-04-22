@@ -22,29 +22,38 @@ menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll('header nav ul a');
 
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const target = document.querySelector(targetId);
+function enviarParaWhatsApp() {
+    var nome = document.getElementById("nome").value;
+    var telefone = document.getElementById("telefone").value;
+    var email = document.getElementById("email").value;
+    var mensagem = document.getElementById("mensagem").value;
 
-            if (target) {
-                const windowHeight = window.innerHeight;
-                const targetOffsetTop = target.offsetTop;
-                const targetHeight = target.offsetHeight;
-                const scrollToPosition = targetOffsetTop - (windowHeight - targetHeight) / 2;
-                
-                window.scrollTo({
-                    top: scrollToPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-});
+    // Verificar se todos os campos estão preenchidos
+    if (nome === "" || telefone === "" || email === "" || mensagem === "") {
+        alert("Por favor, preencha todos os campos do formulário antes de enviar sua mensagem.");
+        return; // Impede o envio se algum campo estiver vazio
+    }
+
+    // Mensagem formatada para o WhatsApp
+    var mensagemWhatsApp =
+        "Mensagem do Cliente:\n\n" +
+        "Nome: " + nome + "\n" +
+        "Telefone: " + telefone + "\n" +
+        "E-mail: " + email + "\n\n" +
+        "Mensagem:\n" + mensagem;
+
+    // Substitua o número de telefone abaixo pelo número desejado com o prefixo internacional (ex: 5511999999999)
+    var numeroWhatsApp = "5571984652983";
+
+    // URL para a API do WhatsApp
+    var url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensagemWhatsApp);
+
+    // Abrir a URL no WhatsApp
+    window.open(url);
+}
+
+
 
 
 AOS.init();
