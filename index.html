@@ -200,15 +200,13 @@
                 <h1 class="text-principal">Entre em contato</h1>
             </div>
             <div class="container-dir" data-aos="zoom-in">
-                <form class="form">
+                <form class="form" id="contactForm" method="POST">
                     <p class="text-secundario heading">FALE COMIGO</p>
-                    <input placeholder="Nome" class="input" id="nome" type="text" required>
-                    <input placeholder="Telefone" class="input" type="tel" id="telefone" required>
-                    <input placeholder="E-mail" class="input" type="email" id="email" required>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/obrigado.html">
+                    <input placeholder="Nome" class="input" name="nome" id="nome" type="text" required>
+                    <input placeholder="Telefone" class="input" name="telefone" type="tel" id="telefone" required>
+                    <input placeholder="E-mail" class="input" name="email" type="email" id="email" required>
                     <textarea placeholder="Mensagem" class="input" id="mensagem" name="mensagem" rows="4" required></textarea>
-                    <button class="btn" id="emailButton">Enviar</button>
+                    <button class="btn" id="emailButton" type="button">Enviar</button>
                 </form>
             </div>
         </div>

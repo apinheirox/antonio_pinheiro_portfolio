@@ -46,38 +46,32 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.getElementById('emailButton').addEventListener('click', sendMail);
+document.getElementById("emailButton").addEventListener("click", function() {
+    var nome = document.getElementById("nome").value.trim();
+    var telefone = document.getElementById("telefone").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var mensagem = document.getElementById("mensagem").value.trim();
 
+    if (nome === "" || telefone === "" || email === "" || mensagem === "") {
+        alert("Por favor, preencha todos os campos.");
+        return;
+    }
 
-function sendMail (e) {
-    e.preventDefault();
+    var xhr = new XMLHttpRequest();
+    var url = "./src/enviar-email.php";
+    var params = "nome=" + nome + "&telefone=" + telefone + "&email=" + email + "&mensagem=" + mensagem;
     
-    const email = document.getElementById('email').value;
-    const messagem = document.getElementById('mensagem').value;
-    const nome = document.getElementById('nome').value;
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-    // Verifica se todos os campos (e-mail, mensagem e nome) foram preenchidos pelo usuário.
-    if (email && messagem && nome) {
-        // Se todos os campos estiverem preenchidos, usa a biblioteca 'Email.js'
-        // para enviar o e-mail com os detalhes fornecidos pelo usuário.
-        Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "techwoodev@gmail.com",
-            Password: "92DE31F0FF89F50F69B0AAE013721AF69809",
-            To: "matoscezar17@gmail.com",
-            From: "techwoodev@gmail.com",
-            Subject: `${nome} Enviando E-mail Com Javascript`,
-            Body: `Email: ${email} \n \n ${messagem} \n \n ${telefone}`,
-          }).then(() => {
-            // Após o envio bem-sucedido, exibe um alerta informando que a mensagem foi enviada
-            alert('Mensagem enviada!');
-            // E recarrega a página, para limpar os campos e permitir que o usuário envie mais e-mails.
-            location.reload();
-          });
-    } else {
-        // Se algum dos campos estiver em branco, exibe um alerta informando que todos os campos devem ser preenchidos.
-        alert('Preencha todos os campos!');
-    }  
-}
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            alert(xhr.responseText);
+            document.getElementById("contactForm").reset();
+        }
+    }
+
+    xhr.send(params);
+});
 AOS.init();
 
