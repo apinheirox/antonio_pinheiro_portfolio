@@ -4,10 +4,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $destinatario = "matoscezar17@gmail.com";
 
     // Obtenha os dados do formulário
-    $nome = $_POST["nome"];
-    $telefone = $_POST["telefone"];
-    $email = $_POST["email"];
-    $mensagem = $_POST["mensagem"];
+    $data = json_decode(file_get_contents("php://input"), true);
+
+    // Verifique se os dados foram recebidos corretamente
+    if (!$data || empty($data['nome']) || empty($data['telefone']) || empty($data['email']) || empty($data['mensagem'])) {
+        http_response_code(400); // Bad Request
+        echo "Erro: Por favor, preencha todos os campos.";
+        exit();
+    }
+
+    // Dados do formulário
+    $nome = $data['nome'];
+    $telefone = $data['telefone'];
+    $email = $data['email'];
+    $mensagem = $data['mensagem'];
 
     // Construa a mensagem de e-mail
     $assunto = "Novo contato do formulário";
@@ -22,12 +32,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "From: $nome <$email>\r\n";
     $headers .= "Reply-To: $email\r\n";
 
+    // Debug: Exibir dados do formulário e cabeçalhos
+    echo "<pre>";
+    echo "Dados do Formulário:\n";
+    print_r($data);
+    echo "\nCabeçalhos do E-mail:\n";
+    print_r($headers);
+    echo "</pre>";
+
     // Use a função mail() do PHP para enviar o e-mail
-    if (mail($destinatario, $assunto, $corpo_email, $headers)) {
+    $enviado = mail($destinatario, $assunto, $corpo_email, $headers);
+    if ($enviado) {
         // E-mail enviado com sucesso
         echo "E-mail enviado com sucesso!";
     } else {
         // Erro ao enviar o e-mail
+        http_response_code(500); // Internal Server Error
         echo "Erro ao enviar o e-mail. Por favor, tente novamente.";
     }
 } else {
@@ -35,5 +55,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: ../index.html");
     exit();
 }
+
+
+
 
 

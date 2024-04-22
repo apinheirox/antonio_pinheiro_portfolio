@@ -57,21 +57,35 @@ document.getElementById("emailButton").addEventListener("click", function() {
         return;
     }
 
-    var xhr = new XMLHttpRequest();
     var url = "./src/enviar-email.php";
-    var params = "nome=" + nome + "&telefone=" + telefone + "&email=" + email + "&mensagem=" + mensagem;
-    
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    var params = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            nome: nome,
+            telefone: telefone,
+            email: email,
+            mensagem: mensagem
+        })
+    };
 
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            alert(xhr.responseText);
+    fetch(url, params)
+        .then(function(response) {
+            if (!response.ok) {
+                throw new Error('Erro ao enviar o formulário. Por favor, tente novamente.');
+            }
+            return response.text();
+        })
+        .then(function(data) {
+            alert(data);
             document.getElementById("contactForm").reset();
-        }
-    }
-
-    xhr.send(params);
+        })
+        .catch(function(error) {
+            alert(error.message);
+        });
 });
+
 AOS.init();
 
