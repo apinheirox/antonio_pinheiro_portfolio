@@ -46,46 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.getElementById("emailButton").addEventListener("click", function() {
-    var nome = document.getElementById("nome").value.trim();
-    var telefone = document.getElementById("telefone").value.trim();
-    var email = document.getElementById("email").value.trim();
-    var mensagem = document.getElementById("mensagem").value.trim();
-
-    if (nome === "" || telefone === "" || email === "" || mensagem === "") {
-        alert("Por favor, preencha todos os campos.");
-        return;
-    }
-
-    var url = "./src/enviar-email.php";
-    var params = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            nome: nome,
-            telefone: telefone,
-            email: email,
-            mensagem: mensagem
-        })
-    };
-
-    fetch(url, params)
-        .then(function(response) {
-            if (!response.ok) {
-                throw new Error('Erro ao enviar o formulário. Por favor, tente novamente.');
-            }
-            return response.text();
-        })
-        .then(function(data) {
-            alert(data);
-            document.getElementById("contactForm").reset();
-        })
-        .catch(function(error) {
-            alert(error.message);
-        });
-});
 
 AOS.init();
 

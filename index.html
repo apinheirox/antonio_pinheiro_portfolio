@@ -200,13 +200,13 @@
                 <h1 class="text-principal">Entre em contato</h1>
             </div>
             <div class="container-dir" data-aos="zoom-in">
-                <form class="form" id="contactForm">
+                <form class="form" id="contactForm" method="POST" action="enviar.php">
                     <p class="text-secundario heading">FALE COMIGO</p>
                     <input placeholder="Nome" class="input" name="nome" id="nome" type="text" required>
                     <input placeholder="Telefone" class="input" name="telefone" type="tel" id="telefone" required>
                     <input placeholder="E-mail" class="input" name="email" type="email" id="email" required>
-                    <textarea placeholder="Mensagem" class="input" id="mensagem" name="mensagem" rows="4" required></textarea>
-                    <button class="btn" id="emailButton" type="button">Enviar</button>
+                    <textarea placeholder="Sua mensagem" class="input" id="mensagem" name="mensagem" rows="4" required></textarea>
+                    <button class="btn" type="submit">Enviar Mensagem</button>
                 </form>
             </div>
         </div>
@@ -231,6 +231,7 @@
         <p class="text-secundario">Desenvolvido por Woodev.tec</p>
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="./src/main.js"></script>
