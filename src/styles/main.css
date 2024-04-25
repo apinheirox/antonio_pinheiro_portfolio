@@ -75,7 +75,7 @@ header {
     width: 100%;
 }
 header.header-scrolled {
-    background-color: #ffffff; /* Define a cor de fundo quando o header estiver rolado */
+    background-color: #ffffff; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.192);
 }
 #home{
@@ -158,22 +158,21 @@ button:hover {
     max-width: 500px;
     width: 500px;
     height: auto;
-    margin: 0 auto; /* Removido a margem superior */
+    margin: 0 auto; 
     z-index: -1; 
 }
 
 .text-home-principal {
     margin-bottom: 10px;
-    font-size: 55px; /* Mantém o tamanho da fonte */
+    font-size: 55px; 
     font-weight: 100;
-    text-align: left; /* Alinha à esquerda por padrão */
 }
 
 .text-home {
     margin-bottom: 10px;
-    font-size: 25px; /* Mantém o tamanho da fonte */
+    font-size: 25px;
     font-weight: 400;
-    text-align: left; /* Alinha à esquerda por padrão */
+    text-align: left;
 }
 
 .elemento-1 {
@@ -190,28 +189,28 @@ button:hover {
 .icon:hover {
     transform: translateY(-4px);
 }
-/* Estilos para o menu hamburguer */
+
 .menu-toggle {
-    display: none; /* Esconde o menu hamburguer por padrão em telas maiores */
+    display: none; 
 }
 
-/* Estilos para o menu hamburguer visível em telas menores */
+
 @media only screen and (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Mostra o menu hamburguer em telas menores */
-        cursor: pointer; /* Altera o cursor para indicar que é clicável */
-        margin-right: -100px; /* Adiciona um espaçamento à direita */
+        display: block; 
+        cursor: pointer; 
+        margin-right: -100px; 
     }
 
     .menu-toggle .bar {
-        width: 25px; /* Largura das barras */
-        height: 3px; /* Altura das barras */
-        background-color: #000; /* Cor das barras */
-        margin: 5px 0; /* Espaçamento entre as barras */
-        transition: 0.4s; /* Adiciona uma transição suave */
+        width: 25px; 
+        height: 3px; 
+        background-color: #000; 
+        margin: 5px 0; 
+        transition: 0.4s; 
     }
 
-    /* Animação para transformar o ícone do menu hamburguer em 'X' */
+    
     .menu-toggle.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }

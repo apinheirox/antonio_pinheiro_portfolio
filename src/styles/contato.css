@@ -1,10 +1,10 @@
-/* Estilos para a seção #contato */
+
 #contato {
     padding: 50px 0;
     margin-top: 50px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px; /* Adiciona margem inferior */
+    margin-bottom: 50px; 
 }
 
 #contato h2 {
@@ -21,7 +21,7 @@
 
 #contato .container {
     display: flex;
-    flex-direction: column; /* Alterado para coluna em dispositivos móveis */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
 }
@@ -35,9 +35,9 @@
 
 #contato .container-esq {
     flex: 1;
-    margin-left: 0; /* Alterado para 0 em dispositivos móveis */
-    margin-top: 0; /* Alterado para 0 em dispositivos móveis */
-    text-align: center; /* Centralizado em dispositivos móveis */
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
 }
 
 #contato .container-dir {
@@ -46,18 +46,18 @@
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    margin-left: 0; /* Alterado para 0 em dispositivos móveis */
-    margin-top: 20px; /* Ajustado para espaçamento em dispositivos móveis */
+    margin-left: 0;
+    margin-top: 20px;
 }
 
 .form {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%; /* Ajustado para largura total */
-    max-width: 450px; /* Limitado para evitar que se estenda demais */
+    width: 100%; 
+    max-width: 450px;
     gap: 10px;
-    padding: 20px; /* Ajustado para espaçamento */
+    padding: 20px;
     border-radius: 15px;
     background-color: #fffff8;
     box-shadow: 0 0 0 4px #ffffff, 10px 10px 5px rgba(0, 0, 0, 0.267);
@@ -90,8 +90,8 @@
     padding: 0.5em;
     border: 1px solid #bec092;
     color: #bec092;
-    width: 100%; /* Ajustado para largura total */
-    max-width: 25em; /* Limitado para evitar que se estenda demais */
+    width: 100%;
+    max-width: 25em;
     height: 4em;
     border-radius: 10px;
     background-color: #fffff0;
@@ -130,7 +130,7 @@
     box-shadow: none;
 }
 
-/* Media queries para dispositivos móveis */
+
 @media only screen and (max-width: 768px) {
     #contato .container-esq {
         text-align: center;
