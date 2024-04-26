@@ -16,7 +16,7 @@
 
 .scroll-animation2.active {
     opacity: 1;
-    transform: translateX(0); /* Retorna a section à sua posição original */
+    transform: translateX(0);
 }
 #servicos h2 {
     font-size: 20px;

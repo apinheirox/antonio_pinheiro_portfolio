@@ -1,22 +1,22 @@
-/* Estilos para a seção #sobre */
+
 #sobre {
     display: flex;
-    flex-direction: row; /* Mantém o layout em linha */
+    flex-direction: row;
     align-items: center;
-    padding: 20px; /* Ajuste de espaçamento */
+    padding: 20px;
     margin: 0 auto;
     max-height: 700px;
     max-width: 1200px;
 }
 .scroll-animation {
     opacity: 0;
-    transform: translateX(-50px); /* Mova a seção para a esquerda */
+    transform: translateX(-50px);
     transition: opacity 2s ease, transform 2s ease;
 }
 
 .scroll-animation.active {
     opacity: 1;
-    transform: translateX(0); /* Retorne a seção à sua posição original */
+    transform: translateX(0);
 }
 #sobre h2 {
     font-size: 20px;
@@ -32,22 +32,22 @@
 
 #sobre p {
     font-size: 14px;
-    max-width: 500px; /* Largura máxima para o texto */
+    max-width: 500px;
     text-align: left;
-    margin-bottom: 5px; /* Alinhado à esquerda */
+    margin-bottom: 5px;
 }
 
 #sobre .container-esq img {
     max-width: 100%;
     height: auto;
     margin: 0px auto; 
-    width: 500px; /* Largura da imagem */
+    width: 500px;
 }
 
 #sobre .container-dir {
     flex: 1;
     text-align: left;
-    padding-left: 20px; /* Ajuste de espaçamento */
+    padding-left: 20px;
 }
 
 
@@ -68,17 +68,17 @@
     transition: 1.0s ease all;
 }
 
-/* Media queries para dispositivos móveis */
+
 @media only screen and (max-width: 768px) {
     #sobre {
-        flex-direction: column; /* Altera para coluna em dispositivos móveis */
+        flex-direction: column; 
     }
     
     #sobre .container-dir {
-        order: -1; /* Muda a ordem do container-dir */
-        padding-left: 0; /* Remove o padding à esquerda */
+        order: -1;
+        padding-left: 0;
         text-align: center;
-        margin-top: 40px; /* Centraliza o texto */
+        margin-top: 40px;
     }
 
     #sobre .container-dir h2,
@@ -87,7 +87,7 @@
     #sobre .container-dir .button-sobre {
         text-align: center;
         justify-content: center;
-        align-items: center; /* Centraliza o texto dentro do container-dir */
+        align-items: center;
     }
     #sobre p{
         font-size: 15px;

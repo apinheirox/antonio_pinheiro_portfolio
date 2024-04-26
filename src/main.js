@@ -30,7 +30,7 @@ window.addEventListener("load", function() {
         var content = document.getElementById("content");
         content.style.opacity = 1;
         content.style.pointerEvents = "auto";
-    }, 5000);
+    }, 3000);
 });
 function enviarParaWhatsApp() {
     var nome = document.getElementById("nome").value;
