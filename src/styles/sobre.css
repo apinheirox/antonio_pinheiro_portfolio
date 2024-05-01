@@ -38,10 +38,12 @@
 }
 
 #sobre .container-esq img {
-    max-width: 100%;
+    max-width: 450px;
+    width: 450px;
+    height: 450px;
     height: auto;
-    margin: 0px auto; 
-    width: 500px;
+    margin: 0 auto; 
+    z-index: -1;
 }
 
 #sobre .container-dir {
