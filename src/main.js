@@ -22,16 +22,6 @@ menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    var loader = document.getElementById("loader");
-    loader.style.opacity = 0;
-    loader.style.pointerEvents = "none";
-
-    var content = document.getElementById("content");
-    content.style.opacity = 1;
-    content.style.pointerEvents = "auto";
-});
-
 function enviarParaWhatsApp() {
     var nome = document.getElementById("nome").value;
     var telefone = document.getElementById("telefone").value;
