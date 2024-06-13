@@ -1,11 +1,12 @@
 
 #sobre {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
     margin: 0 auto;
-    max-height: 700px;
+}
+
+#sobre .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
 }
 .scroll-animation {
@@ -49,7 +50,6 @@
 #sobre .container-dir {
     flex: 1;
     text-align: left;
-    padding-left: 20px;
 }
 
 
@@ -75,12 +75,21 @@
     #sobre {
         flex-direction: column; 
     }
-    
+    #sobre .container{
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
     #sobre .container-dir {
         order: -1;
-        padding-left: 0;
         text-align: center;
+        align-items: center;
+        justify-content: center;
         margin-top: 40px;
+        margin: 0 auto;
+        padding-left: -20px;
     }
 
     #sobre .container-dir h2,
@@ -93,12 +102,15 @@
     }
     #sobre p{
         font-size: 15px;
+        margin-bottom: 10px;
     }
     #sobre h2{
         font-size: 25px;
+        margin-bottom: 10px;
     }
     #sobre h1{
         font-size: 30px;
+        margin-bottom: 10px;
     }
     #sobre .container-esq img {
         width: 300px;
